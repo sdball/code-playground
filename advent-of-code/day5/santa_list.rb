@@ -7,7 +7,6 @@ class SantaList
 
   def nice
     input.select { |line|
-      line.chomp!
       list_checker.new(line).nice?
     }
   end
